@@ -1,0 +1,289 @@
+body {
+    font-family:'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: #e0f7fa; 
+    color: #333; 
+    background-image: linear-gradient(45deg, #CCB566,#36A290);
+    min-height: 100vh;
+}
+
+header {
+    background-color: #00695c; 
+    padding: 10px;
+    text-align: center;
+    color: white;
+    
+}
+/* Index Page */
+.flex-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: linear-gradient(45deg, #CCB566,#36A290);
+}
+
+.name-container {
+    max-width: 500px;
+    margin: 100px auto;
+    padding: 20px;
+    background-color: #004d40; 
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.name-container h1 {
+    margin-bottom: 20px;
+}
+
+.name-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.name-container input {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+}
+
+.name-container button {
+    padding: 10px;
+    background-color: #00796b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.name-container button:hover {
+    background-color: #004d40;
+}
+
+form label{
+    margin-bottom: 10px;
+}
+
+nav{
+    border: 5px black;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    background-color: #055f50; 
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 14px 20px;
+    display: block;
+    transition: background-color 0.3s;
+}
+
+nav ul li a.disabled {
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+nav ul li a:hover:not(.disabled) {
+    background-color: #00796b;
+}
+
+.container {
+    display: flex;
+    max-width: 1400px;
+    margin: auto;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.sidebar {
+    width: 100%;
+    background-color: #004d40; 
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.sidebar h2 {
+    margin-top: 0;
+    font-size: 1.2em;
+}
+
+.sidebar form {
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar input, .sidebar button {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.sidebar input {
+    background-color: #00796b;
+    color: white;
+}
+
+.sidebar button {
+    background-color: #00695c;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.sidebar button:hover {
+    background-color: #00796b;
+}
+
+.content {
+    text-align: center;
+}
+
+.video-container {
+    text-align: center;
+    margin: 0 0 20px 50px;
+}
+
+iframe {
+    max-width: 800px;
+    border: 5px solid #004d40; /* Verde escuro */
+    border-radius: 10px;
+}
+
+.info {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.download-button {
+    display: inline-block;
+    background-color: #00695c; 
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.download-button:hover {
+    background-color: #00796b;
+}
+
+.chapters {
+    margin-top: 20px;
+}
+
+.chapters h2 {
+    margin-bottom: 10px;
+    font-size: 1.5em;
+    color: #fcfcfc;
+    text-align: center;
+}
+
+.chapters ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.chapters ul li {
+    margin-bottom: 10px;
+}
+
+.chapters ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: text-decoration 0.3s;
+}
+
+.chapters ul li a:hover {
+    text-decoration: underline;
+}
+
+.certificado-container {
+    text-align: center;
+    margin-top: 50px;
+    width: 100%;
+}
+
+.certificado-container button {
+    padding: 10px 20px;
+    background-color: #00695c; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+}
+
+.certificado-container button:hover {
+    background-color: #00796b;
+}
+
+/* Responsividade */
+@media (min-width: 768px) {
+    .container {
+        flex-wrap: nowrap;
+    }
+
+    .sidebar {
+        width: 25%;
+        border: 1px solid black;
+        margin: 0 10px 0 0;
+    }
+
+    
+}
+
+@media (max-width: 768px) {
+    .certificado-container img{
+        width: 75%;
+    }
+
+    .content{
+        width: 75%;
+    }
+
+    .video-container{
+        margin-left: 5px;
+    }
+
+    iframe{
+        width: 350px;
+    }
+
+    p{
+        padding-left: 50px;
+    }
+
+    .download-button{
+        margin-left: 50px;
+    }
+
+    .certificado-container h2{
+        min-width: 400px;
+    }
+
+    .certificado-container p {
+        padding-left: 0;
+        min-width: 400px;
+    }
+}
